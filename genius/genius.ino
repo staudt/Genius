@@ -124,8 +124,8 @@ void toca_inicio_jogo() {
 }
 
 void toca_fracasso() {
-  int sequencia[] = {NA5, NA4, NA2};
-  int tempo[] = {6, 6, 1};
+  int sequencia[] = {NA3, NA2, NA1};
+  int tempo[] = {6, 4, 1};
   delay(200);
   melodia(3, sequencia, tempo);
 }
@@ -204,6 +204,7 @@ void setup() {
   for(int i=0;i<4;i++) {
     pinMode(btn_pin[i], INPUT);
     digitalWrite(btn_pin[i], HIGH);
+    pinMode(led_pin[i], OUTPUT);
   }
   delay(200);
   toca_abertura();
@@ -228,10 +229,10 @@ void loop() {
     for(int i=0;i<pontos;i++) {
       digitalWrite(led_pin[sequencia[i]], HIGH);
       tone(speaker_pin, btn_tone[sequencia[i]]);
-      delay(700);
+      delay(600);
       noTone(speaker_pin);
       digitalWrite(led_pin[sequencia[i]], LOW);
-      delay(300);
+      delay(200);
     }
     // Le a sequencia do jogador
     Serial.println("Le sequencia do jogador");
