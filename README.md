@@ -2,7 +2,8 @@
 A Simon Says for Arduino, also known as Genius.
 
 You can see the circuit simulation here: https://123d.circuits.io/circuits/918958-simon-says (no sound however)
-See it running on a protoboard here: https://youtu.be/jRHjnw182f4 and here the enclosed version using arcade buttons: https://youtu.be/AFB2u_2nE7s
+
+There's also a video of it running on a protoboard here: https://youtu.be/jRHjnw182f4 and a enclosed version using blinking arcade buttons: https://youtu.be/AFB2u_2nE7s
 
 # Getting Started
 You'll need the following:
